@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Pancakes</name>
+    <prepTime>20</prepTime>
+    <calories>320.5</calories>
+    <vegetarian>false</vegetarian>
+    <difficulty>E</difficulty>
+    <ingredients>
+        <ingredient>
+            <name>Flour</name>
+            <quantity>200</quantity>
+            <price>0.80</price>
+            <available>true</available>
+            <unitCode>G</unitCode>
+        </ingredient>
+        <ingredient>
+            <name>Milk</name>
+            <quantity>1</quantity>
+            <price>1.20</price>
+            <available>true</available>
+            <unitCode>L</unitCode>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <price>0.60</price>
+            <available>true</available>
+            <unitCode>P</unitCode>
+        </ingredient>
+    </ingredients>
+</recipe>
