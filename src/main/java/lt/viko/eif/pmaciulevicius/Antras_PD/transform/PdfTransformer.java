@@ -15,8 +15,19 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
+/**
+ * Si klasė skirta XML failo transformavimui į PDF formatą.
+ */
 public class PdfTransformer {
 
+    /**
+     * Atlieka XML failo transformaciją į PDF naudojant XSL-FO šabloną.
+     *
+     * @param xmlPath kelias iki XML failo
+     * @param xslPath kelias iki XSL-FO failo
+     * @param outputPath kelias, kur bus išsaugotas PDF failas
+     * @throws Exception jei transformacijos metu įvyksta klaida
+     */
     public void transformXmlToPdf(String xmlPath, String xslPath, String outputPath) throws Exception {
         File xmlFile = new File(xmlPath);
         File xslFile = new File(xslPath);

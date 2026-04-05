@@ -9,9 +9,19 @@ import org.springframework.context.annotation.Configuration;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Si klasė skirta pradiniams duomenims įkelti į duomenų bazę.
+ * Paleidus programą, ji įrašo receptą ir jo ingredientus, jei lentelė dar tuščia.
+ */
 @Configuration
 public class DataLoader {
 
+    /**
+     * Sukuria pradinį recepto įrašą duomenų bazėje.
+     *
+     * @param recipeRepository repozitorija darbui su receptais
+     * @return CommandLineRunner objektas
+     */
     @Bean
     public org.springframework.boot.CommandLineRunner loadData(RecipeRepository recipeRepository) {
         return args -> {
